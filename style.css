@@ -1,0 +1,23 @@
+body{
+    background-color: aqua;
+}
+
+h1,h2,h5{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    display: block;
+    height: 10%;
+    width: 10%;
+    margin-left: auto;
+     margin-right: auto;
+     background-size: 50px 10px;    
+}
+
+tr{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
