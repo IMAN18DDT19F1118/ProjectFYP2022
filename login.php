@@ -24,4 +24,25 @@ else if(empty($password)){
     exit();
 }
 
-$sql = ""
+$sql = "SELECT * FROM  student WHERE IC_Pelajar='$IC' AND Password='$password'";
+
+$result = mysqli_query($conn, $sql);
+
+if(mysqli_num_rows($result)== 1) {
+    $row = mysqli_fecth_assoc($result);
+    if($row['IC_Pelajar'] === $IC && $row['Password'] === $password){
+        echo "Logged In!"
+        $_SESSION['IC_Pelajar'] = $row['IC_Pelajar'];
+        $_SESSION['Nama'] = $row['Nama'];
+        $_SESSION['ID'] = $row['ID'];
+        header("Location: home.php");
+        exit();
+    }
+    else{
+        header("Location: index.php?error=Incorrect IC or Password");
+    }
+}
+else{
+    header("Location: index.php");
+    exit();
+}
