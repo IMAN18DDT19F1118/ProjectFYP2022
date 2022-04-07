@@ -1,252 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-
-*{
+body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
+  background: url(gambar/wall.jpg);
+  background-size: cover;
+  background-position:top;
+  font-family:sans-serif;
 }
 
-body{
-   background-color: #f3f5f9;
-}
-
-
-
-
-
-.wrapper{
-  display: flex;
+.form{
+  font-family: "Roboto",sans-serif;
   position: relative;
-}
-
-.wrapper .sidebar{
-  width: 200px;
-  height: 100%;
-  background: #2d1b86;
-  padding: 30px 0px;
-  position: fixed;
-}
-
-.wrapper .sidebar h2{
-  color: #fff;
-  text-transform: uppercase;
+  z-index: 1;
+  background: #FFFFFF;
+  opacity: 99%;
+  max-width: 260px;
+  margin: 200px auto 100px;
+  padding: 10px 45px 30px 45px;
   text-align: center;
-  margin-bottom: 30px;
-}
-
-.wrapper .sidebar ul li{
-  padding: 15px;
-  border-bottom: 1px solid #bdb8d7;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  border-top: 1px solid rgba(255,255,255,0.05);
-}    
-
-.wrapper .sidebar ul li a{
-  color: #bdb8d7;
-  display: block;
-}
-
-.wrapper .sidebar ul li a .fas{
-  width: 25px;
-}
-
-.wrapper .sidebar ul li:hover{
-  background-color: #594f8d;
-}
-    
-.wrapper .sidebar ul li:hover a{
-  color: #fff;
-}
- 
-.wrapper .sidebar .log_out{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.wrapper .sidebar .log_out a{
-  display: block;
-  width: 150px;
-  background: #594f8d;
-  height: 40px;
-  line-height: 45px;
-  text-align: center;
-  margin: 0 5px;
-  color: #bdb8d7;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.wrapper .main_content{
-  width: 100%;
-  margin-left: 200px;
-}
-
-.wrapper .main_content .header{
-  padding: 20px;
-  background: #fff;
-  color: black;
-  border-bottom: 1px solid #e0e4e8;
-  font-size: 60px;
-}
-
-.wrapper .main_content .info{
-  margin: 20px;
-  color: black;
-  line-height: 25px;
-}
-
-.wrapper .main_content .info div{
-  margin-bottom: 20px;
-}
-
-body {
-
-  background: #91a716;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  height: 100vh;
-
-  flex-direction: column;
-
-}
-
-*{
-
-  font-family: cursive;
-
-  box-sizing: padding-box;
-
-}
-
-form {
-
-  width: 1000px;
-
-  border: 3px solid rgb(177, 142, 142);
-
-  padding: 20px;
-
-  background: rgb(85, 54, 54);
-
-  border-radius: 20px;
-
-}
-
-h2 {
-
-  text-align: center;
-
-  margin-bottom: 40px;
-
-}
-
-input {
-
-  display: block;
-
-  border: 2px solid #ccc;
-
-  width: 95%;
-
-  padding: 10px;
-
-  margin: 10px auto;
-
-  border-radius: 5px;
-
-}
-
-label {
-
-  color: #888;
-
-  font-size: 18px;
-
-  padding: 10px;
-
-}
-
-button {
-
-  float: right;
-
-  background: rgb(35, 174, 202);
-
-  padding: 10px 15px;
-
-  color: #fff;
-
-  border-radius: 5px;
-
-  margin-right: 10px;
-
-  border: none;
-
-}
-
-button:hover{
-
-  opacity: .10;
-
-}
-
-.error {
-
- background: #F2DEDE;
-
- color: #0c0101;
-
- padding: 10px;
-
- width: 95%;
-
- border-radius: 5px;
-
- margin: 20px auto;
-
-}
-
-h1 {
-
-  text-align: center;
-
-  color: rgb(134, 3, 3);
-
-}
-
-a {
-
-  float: right;
-
-  background: rgb(183, 225, 233);
-
-  padding: 10px 15px;
-
-  color: #fff;
-
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border-radius: 10px;
-
-  margin-right: 10px;
-
-  border: none;
-
-  text-decoration: none;
-
 }
 
-a:hover{
+.form p{
+  font-size: 15px;
+  padding: 1px;
+  text-align: center;
+}
+.form input{
+  outline: 0;
+  border-radius: 10px;
+  background: #F2F2F2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form input:hover{
+  background-color: #D3F8F9;
+  transition: all 1s ease 0s;
+}
+.form input:focus{
+  background-color: #D3F8F9;
+  transition: all 1s ease 0s;
+}
+.form button{
+  text-transform: uppercase ;
+  outline: 0;
+  border-radius: 10px;
+  background: #1ADBE5;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.form button:hover, .form button:active, .form button:focus{
+  background-color: #06C5CF ;
+  transition: all 1s ease 0s;
+}
 
-  opacity: .7;
-
+.form .message{
+  margin: 15px 0 0;
+  color: #B3B3B3;
+  font-size: 12px;
+}
+.form  .message{
+  color: #06C5CF;
+  text-decoration: none ;
 }
