@@ -1,15 +1,17 @@
 <?php
 
     $sname = "localhost";
-    $IC = "root";
+    $username = "root";
     $password = "";
 
     $db_name = "systemkaunselingptss";
 
-    $conn = mysqli_connect( $sname, $IC, $password, $db_name);
+    $conn = mysqli_connect( $sname, $username, $password, $db_name);
 
-    if(!$conn){
-        echo "Connection Failed";
+    if($conn->connect_error){
+        die("Connection failed: ".$conn->connect_error);
     }
+    echo "Connected successfully";
+
 
 ?>
